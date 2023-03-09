@@ -85,14 +85,14 @@ public class Main {
         System.out.println(strData);
 
         //Skapar JSONObject av fetched data
-        JSONObject dataObject = (JSONObject) new JSONParser().parse(String.valueOf(strData));
+        JSONObject issData = (JSONObject) new JSONParser().parse(String.valueOf(strData));
 
-        System.out.println("Hastighet i Km: " + dataObject.get("velocity"));
+        System.out.println("Hastighet i Km: " + issData.get("velocity"));
 
         /* mitt sätt som är dålig
-        Double latitude = Double.parseDouble(dataObject.get("latitude").toString());
-        Double longitude = Double.parseDouble(dataObject.get("longitude").toString());
-        Double altitude = Double.parseDouble(dataObject.get("altitude").toString());
+        Double latitude = Double.parseDouble(issData.get("latitude").toString());
+        Double longitude = Double.parseDouble(issData.get("longitude").toString());
+        Double altitude = Double.parseDouble(issData.get("altitude").toString());
 
         System.out.println("The latitude is: " + latitude);
         System.out.println("The longitude is: " + longitude);
