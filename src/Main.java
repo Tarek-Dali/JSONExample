@@ -89,14 +89,15 @@ public class Main {
 
         System.out.println("Hastighet i Km: " + issData.get("velocity"));
 
-        /* mitt sätt som är dålig
+        /* mitt sätt som är bara om man vill använda matematik på siffror
         Double latitude = Double.parseDouble(issData.get("latitude").toString());
         Double longitude = Double.parseDouble(issData.get("longitude").toString());
         Double altitude = Double.parseDouble(issData.get("altitude").toString());
 
         System.out.println("The latitude is: " + latitude);
         System.out.println("The longitude is: " + longitude);
-        System.out.println("The altitude is: " + altitude);*/
+        System.out.println("The altitude is: " + altitude);
+        */
 
     }
 }
